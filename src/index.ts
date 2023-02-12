@@ -17,9 +17,7 @@ app.post("/batch", batch);
 
 const start = async () => {
   try {
-    if (process.env.NODE_ENV !== 'test') {
-      await app.listen({port: 3030});
-    }
+    await app.listen({ port: 3030 });
     app.log.info(`Server listening on http://localhost:3030`);
   } catch (err) {
     console.error(err)
