@@ -18,7 +18,7 @@
     "build": "tsc -p tsconfig.json",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "watch": "nodemon",
-    "test": "jes --detectOpenHandles --watchAll --coverage",
+    "test": "jest --detectOpenHandles --watchAll --coverage",
     "test:e2e": "jest --detectOpenHandles test/app.e2e.test.ts"
   },
   "dependencies": {
